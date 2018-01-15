@@ -4,11 +4,19 @@ font-family: 'Exo 2', sans-serif;*/
 	--FuenteP: 'Montserrat', sans-serif;
 	--FuenteS: 'Exo 2', sans-serif;
 
-	--colorBack: #020202;
+	--colorBack: #202020;
 	--colorTitle: #333132;
 	--colorText: #3c3c3c;
 	--colorAzul: #03b3da;
 	--colorRojo: #dc0109;
+}
+.btn{
+	font-family: var(--FuenteP);
+	border-radius: 30px;
+	text-transform: uppercase;
+	border: 1px solid gray;
+	padding: 1em 7em;
+	font-weight: bold;
 }
 .WebHero{
 	background-image: url('../img/bg.png');
@@ -81,5 +89,70 @@ font-family: 'Exo 2', sans-serif;*/
 		width: 60%;
 		color: var(--colorText);
 		font-size: 1.2rem;
+	}
+}
+.WebPlataforma{
+	position: relative;
+	height: 80rem;
+	&-division{
+		position: absolute;
+		&-caption{
+			color: white;
+			font-family: var(--FuenteS);
+			text-transform: uppercase;
+			font-size: 2.5rem;
+			font-weight: bold;
+			padding-bottom: 2em;
+
+		}
+		&-title{
+			color: white;
+			font-family: var(--FuenteP);
+			font-weight: lighter;
+			text-transform: uppercase;
+			padding-bottom: 1.5em;
+			position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 20%;
+				left: -10%;
+				border-bottom: 3px solid var(--colorAzul);
+				width: 30%;
+			}
+		}
+		&-parrafo{
+			color: white;
+			font-family: var(--FuenteP);
+			width: 60%;
+			padding-bottom: 4em;
+		}
+		&-btn{
+			color: var(--colorAzul);
+			border: 1px solid var(--colorAzul);
+			transition: .3s;
+			&:hover{
+				color: #067a93;
+				border: 1px solid #067a93;
+			}
+		}
+		&:first-child{
+			padding: 21.5em 0 15em 15em;
+			width: 79%;
+			z-index: 5;
+			background: var(--colorBack);
+			clip-path: polygon(0 10%,30% 0, 100% 40%,80% 100%,0 85%);
+		}
+		&:last-child{
+			right: 0;
+			top: 7em;
+			width: 40%;
+			height: 65%;
+			background-image: url('../img/fondo.jpg!d');
+			z-index: 4;
+			clip-path: polygon(100% 5.5%, 75% 0, 0 50%,70% 100%,100% 95%);
+
+
+		}
 	}
 }
