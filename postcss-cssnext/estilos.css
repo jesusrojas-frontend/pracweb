@@ -5,7 +5,8 @@ font-family: 'Exo 2', sans-serif;*/
 	--FuenteS: 'Exo 2', sans-serif;
 
 	--colorBack: #020202;
-	--colorMenu: #f3f3f3;
+	--colorTitle: #333132;
+	--colorText: #3c3c3c;
 	--colorAzul: #03b3da;
 	--colorRojo: #dc0109;
 }
@@ -13,7 +14,7 @@ font-family: 'Exo 2', sans-serif;*/
 	background-image: url('../img/bg.png');
 	clip-path: polygon(0 0,100% 0, 100% 70%,75% 100%,0 55%);
 	&-header{
-		padding: 4em 2em;
+		padding: 4em 4em;
 		display: flex;
 		justify-content: space-between;
 		&-logo{
@@ -49,5 +50,36 @@ font-family: 'Exo 2', sans-serif;*/
 			width: 8rem;
 			height: 8rem;
 		}
+	}
+}
+.WebHoras{
+	padding: 5em 12em;
+	&-caption{
+		font-family: var(--FuenteS);
+		font-weight: bold;
+		color: var(--colorTitle);
+		border-bottom: 2px solid var(--colorTitle);
+		display: inline;
+		font-size: 5rem;
+	}
+	&-title{
+		font-family: var(--FuenteP);
+		font-weight: lighter;
+		text-transform: uppercase;
+		font-size: 3.3rem;
+		font-weight: lighter;
+		padding: .5em 0 0 2em;
+	}
+	&-container{
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+	}
+	&-parrafo{
+		padding-top: 3em;
+		font-family: var(--FuenteS);
+		width: 60%;
+		color: var(--colorText);
+		font-size: 1.2rem;
 	}
 }
