@@ -189,25 +189,15 @@ font-family: 'Exo 2', sans-serif;*/
 	}
 
 }
-.u-Grid{
-	background: gray;
-	lost-center: 800px;
-	lost-utility: clearfix;
-
-	&-column{
-		background-color: blue;
-		lost-column: 1/5;
-		@media (--tablet){
-			lost-column: 1/3;
-		}
-		@media (--mobile){
-			lost-column: 1/1;
-		}
-	}
+.WebContainer{
+	position: relative;
+	height: 110em;
 }
 .WebBlog{
 	display: flex;
 	justify-content: center;
+	z-index: 10;
+	position: absolute;
 	img{
 		width: 100%;
 	}
@@ -215,6 +205,7 @@ font-family: 'Exo 2', sans-serif;*/
 		width: 70%;
 		lost-center: 100%;
 		lost-utility: clearfix;
+		z-index: 100;
 		&-column{
 			lost-column: 1/2;
 			background: white;
@@ -264,6 +255,81 @@ font-family: 'Exo 2', sans-serif;*/
 					span{
 						padding-left: .3em;
 						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+.WebContact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background: var(--colorBack);
+	padding: 40em 10em 10em 10em;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	clip-path: polygon(0 0,70% 30%, 100% 18%,100% 70%,100% 95%,25% 100%, 0 95%);
+	&-caption{
+		font-family: var(--FuenteP);
+		text-transform: uppercase;
+		color: var(--colorAzul);
+		font-size: 1.5rem;
+	}
+	&-title{
+		color: white;
+		font-family: var(--FuenteP);
+		font-weight: lighter;
+		text-transform: uppercase;
+	}
+	&-parrafo{
+		color: white;
+		width: 80%;
+		font-family: var(--FuenteP);
+		line-height: 1.8rem;
+		padding-bottom: 4em;
+	}
+	&-btn{
+		color: var(--colorAzul);
+		border: 1px solid var(--colorAzul);
+		&:hover{
+			color: var(--colorAzul);
+		}
+	}
+}
+.WebFooter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3em;
+	&-grupo{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&-title{
+			font-family: var(--FuenteP);
+			color: var(--colorTitle);
+			font-size: 2rem;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+		&-sociales{
+			padding: 0;
+			margin: 0;
+			display: flex;
+			justify-content: space-between;
+			width: 50%;
+			&-item{
+				list-style: none;
+				font-size: 1.5rem;
+				a{
+					color: var(--colorText);
+					transition: .3s;
+					&:hover{
+						color: var(--colorAzul);
+						text-decoration: none;
 					}
 				}
 			}
