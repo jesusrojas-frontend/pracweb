@@ -93,7 +93,7 @@ font-family: 'Exo 2', sans-serif;*/
 }
 .WebPlataforma{
 	position: relative;
-	height: 80rem;
+	height: 70rem;
 	&-division{
 		position: absolute;
 		&-caption{
@@ -155,4 +155,37 @@ font-family: 'Exo 2', sans-serif;*/
 
 		}
 	}
+}
+.WebAprender{
+	text-align: center;
+	padding: 10em 20em;
+	&-caption{
+		color: var(--colorRojo);
+		font-family: var(--FuenteP);
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+	&-title{
+		color: var(--colorText);
+		font-family: var(--FuenteP);
+		font-weight: lighter;
+		text-transform: uppercase;
+	}
+	&-img{
+		padding-bottom: 4em;
+	}
+	&-parrafo{
+		font-family: var(--FuenteP);
+		color: var(--colorText);
+		padding-bottom: 4em;
+	}
+	&-btn{
+		color: var(--colorRojo);
+		border: 1px solid var(--colorRojo);
+		&:hover{
+			color: var(--colorRojo);
+		}
+	}
+
 }
