@@ -21,6 +21,8 @@ font-family: 'Exo 2', sans-serif;*/
 img{
 	width: 100%;
 }
+@custom-media --mobile (max-width: 500px);
+@custom-media --tablet (max-width: 768px);
 .WebHero{
 	background-image: url('../img/bg.png');
 	clip-path: polygon(0 0,100% 0, 100% 70%,75% 100%,0 55%);
@@ -210,8 +212,12 @@ img{
 		lost-utility: clearfix;
 		z-index: 100;
 		&-column{
-			lost-column: 1/2;
 			background: white;
+			lost-column: 1/2;
+			@media (--mobile){
+				lost-column: 1;
+				margin-bottom: 3em;
+			}
 			&:first-child{
 				.WebBlog-grid-column-footer-caption{
 					color: var(--colorAzul);
@@ -382,5 +388,27 @@ img{
 			width: 90%;
 		}
 	}
+	.WebContact{
+		padding: 35em 2em 10em 2em;
+		clip-path: polygon(0 0,70% 20%, 100% 10%,100% 70%,100% 95%,25% 100%, 0 95%);
+		&-parrafo{
+			font-size: 1.5rem;
+			line-height: 2.5rem;
+		}
+	}
+}
+@media (max-width: 500px){
+	.WebHero{
+		clip-path: polygon(0 0,100% 0, 100% 70%,75% 100%,0 55%);
+		&-header{
+			padding: 4em 2em;
+		}
+		&-copy{
+			&-title{
+				font-size: 2rem !important;
 
+			}
+		}
+	}
+	
 }
