@@ -18,6 +18,9 @@ font-family: 'Exo 2', sans-serif;*/
 	padding: 1em 7em;
 	font-weight: bold;
 }
+img{
+	width: 100%;
+}
 .WebHero{
 	background-image: url('../img/bg.png');
 	clip-path: polygon(0 0,100% 0, 100% 70%,75% 100%,0 55%);
@@ -332,6 +335,18 @@ font-family: 'Exo 2', sans-serif;*/
 						text-decoration: none;
 					}
 				}
+			}
+		}
+	}
+}
+@media (max-width: 768px){
+	.WebHero{
+		clip-path: polygon(0 0,100% 0, 100% 85%,75% 100%,0 80%);
+		&-copy{
+			padding: 2em 2em 10em 2em;
+			&-title{
+				font-size: 2.8rem;
+
 			}
 		}
 	}
