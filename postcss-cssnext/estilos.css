@@ -377,5 +377,10 @@ img{
 		}
 
 	}
+	.WebBlog{
+		&-grid{
+			width: 90%;
+		}
+	}
 
 }
