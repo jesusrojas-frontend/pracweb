@@ -410,5 +410,21 @@ img{
 			}
 		}
 	}
-	
+	.WebHoras{
+		padding: 5em 5em;
+		&-caption{
+			font-size: 4rem !important;
+		}
+		&-title{
+			font-size: 2rem !important;
+			padding: .5em 0 0 1em;
+		}
+		&-parrafo{
+			padding-top: 2em;
+			width: 100%;
+			font-size: 1.2rem;
+			text-align: justify;
+		}
+	}
+
 }
