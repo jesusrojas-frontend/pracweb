@@ -370,5 +370,12 @@ img{
 			}
 		}
 	}
+	.WebAprender{
+		padding: 10em 5em;
+		&-parrafo{
+			font-size: 1.2rem;
+		}
+
+	}
 
 }
