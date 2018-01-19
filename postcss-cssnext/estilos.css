@@ -426,5 +426,33 @@ img{
 			text-align: justify;
 		}
 	}
-
+	.WebPlataforma{
+		height: 55rem !important;
+		&-division{
+			&-caption{
+				font-size: 1.8rem;
+				padding-bottom: 1em;
+			}
+			&-title{
+				font-size: 2rem;
+				&:after{
+					width: 50%;
+				}
+			}
+			&-parrafo{
+				width: 80%;
+			}
+			&:first-child{
+				width: 100%;
+				padding: 13em 0 10em 4em !important;
+				clip-path: polygon(0 10%,30% 0, 100% 20%,95% 95%,0 100%) !important;
+			}
+			&:last-child{
+				top: 0;
+				right: 0;
+				width: 70%;
+				height: 70%;
+			}
+		}
+	}
 }
