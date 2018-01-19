@@ -197,6 +197,9 @@ img{
 .WebContainer{
 	position: relative;
 	height: 110em;
+	@media (--mobile){
+		height: 140em !important;
+	}
 }
 .WebBlog{
 	display: flex;
@@ -453,6 +456,23 @@ img{
 				width: 70%;
 				height: 70%;
 			}
+		}
+	}
+	.WebAprender{
+		padding: 10em 2em !important;
+		&-parrafo{
+			font-size: 1.2rem;
+		}
+		&-title{
+			font-size: 2rem;
+		}
+
+	}
+	.WebContact{
+		padding: 70em 2em 10em 2em !important;
+		&-parrafo{
+			font-size: 1.2rem !important;
+			line-height: 2rem !important;
 		}
 	}
 }
