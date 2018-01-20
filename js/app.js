@@ -4,3 +4,5 @@ $burguerButton.addEventListener('click', toggleMenu);
   function toggleMenu(){
     $menu.classList.toggle('active')
   };
+
+$('.boton').on('click', toggleMenu);

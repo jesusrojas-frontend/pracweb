@@ -17,27 +17,27 @@ body
 			navbar.WebHero-header-navbar#menu
 				ul.WebHero-header-navbar-menu
 					li.WebHero-header-navbar-menu-item
-						a(href="#") Horas
+						a(href="#horas").boton Horas
 					li.WebHero-header-navbar-menu-item
-						a(href="#") Plataforma
+						a(href="#plataforma").boton Plataforma
 					li.WebHero-header-navbar-menu-item
-						a(href="#") Aprender
+						a(href="#aprender").boton Aprender
 					li.WebHero-header-navbar-menu-item
-						a(href="#") Blog
+						a(href="#blog").boton Blog
 					li.WebHero-header-navbar-menu-item
-						a(href="#") Contacto
+						a(href="#contacto").boton Contacto
 		.WebHero-copy
 			h1.WebHero-copy-title!= "La mejor forma de ser <strong>profesional</strong> en algo es <strong>practicando</strong>"
 			.WebHero-copy-play
 				.WebHero-copy-play-circulo
 					.WebHero-copy-play-circulo-corte
 				.WebHero-copy-play-triangulo
-	section.WebHoras
+	section.WebHoras#horas
 		h1.WebHoras-caption 10.000 Horas
 		h2.WebHoras-title Para ser experto
 		.WebHoras-container
 			p.WebHoras-parrafo  No se necesitan de 10.000 horas para ser un experto en alguna área. Si es cierto que mientras más se practique se va a tener más experiencia, pero eso no lo es todo. También se necesita la unión de aptitud y actitud. Las 10.000 ayudan a mejorar, pero no nos convertiremos en Bill Gates.
-	section.WebPlataforma
+	section.WebPlataforma#plataforma
 		.WebPlataforma-division
 			h2.WebPlataforma-division-caption Plataforma
 			h1.WebPlataforma-division-title La practica hace al maestro
@@ -45,7 +45,7 @@ body
 			a.WebPlataforma-division-btn.btn(href="#") Leer más
 		.WebPlataforma-division
 
-	section.WebAprender
+	section.WebAprender#aprender
 		.WebAprender-container
 			h2.WebAprender-caption El mundo
 			h1.WebAprender-title El aprendizaje esta en todo el mundo
@@ -53,7 +53,7 @@ body
 			p.WebAprender-parrafo  En el mundo existe demasiada mediocridad, y es hora de cambiar esa perspectiva errónea de las personas. Nuestro objetivo es ayudar a las personas a construir el mundo del mañana, y que nuestro futuro sea extraordinario.
 			a.WebAprender-btn.btn(href="#") Ver cursos
 	.WebContainer
-		section.WebBlog
+		section.WebBlog#blog
 			.WebBlog-grid
 				.WebBlog-grid-column
 					.WebBlog-grid-column-header
@@ -72,7 +72,7 @@ body
 						a.WebBlog-grid-column-footer-btn(href="#")
 							span.fa.fa-plus
 		section.WebContact
-			h2.WebContact-caption Contactanos
+			h2.WebContact-caption#contacto Contactanos
 			h1.WebContact-title Oficinas al rededor del mundo
 			img.WebContact-img(src="img/continentes.png", alt="continentes")
 			p.WebContact-parrafo  Gracias a nuestras metodologías flexibles, y a nuestro gran equipo multicultural; le podemos brindar acceso de nuestros servicios a todo el mundo, para así construir un mejor futuro, y que nuestro planeta esté en manos de excelentes profesionales.
@@ -86,4 +86,5 @@ body
 				li.WebFooter-grupo-sociales-item
 					a.fa.fa-twitter(href="#")
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Montserrat:300,400,700" rel="stylesheet">
+	script(src="js/jquery.js")
 	script(src="js/app.js")

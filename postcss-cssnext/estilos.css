@@ -98,9 +98,51 @@ body{
 
 		}
 		&-play{
-			background: black;
-			width: 8rem;
-			height: 8rem;
+			width: 6rem;
+			height: 6rem;
+			border-radius: 50%;
+			margin: auto;
+			background: white;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-left: .5em;
+			&:hover{
+				cursor: pointer;
+			}
+			&-triangulo{
+				width: 0; 
+			    height: 0;
+			    border-left: 40px solid var(--colorAzul);
+			    border-top: 20px solid transparent;
+			    border-bottom: 20px solid transparent;
+			    z-index: 100;
+			    position: relative;
+			    &:before{
+			    	content: "";
+			    	top: -10px;
+			    	left: -34px;
+			    	position: absolute;
+			    	border-left: 20px solid var(--colorBack);
+				    border-top: 10px solid transparent;
+				    border-bottom: 10px solid transparent;
+			    }
+			}
+			&:after{
+				z-index: 2;
+				content: "";
+				width: 6rem;
+				height: 6rem;
+				position: absolute;
+				margin: auto;
+				top: 0;
+				left: 0;
+				background: var(--colorBack) content-box;
+				border-radius: 50%;
+				padding: .5em;
+				box-sizing: border-box;
+			}
 		}
 	}
 }
@@ -390,6 +432,9 @@ body{
 @media (max-width: 768px){
 	.WebHero{
 		clip-path: polygon(0 0,100% 0, 100% 85%,75% 100%,0 80%);
+		&-header-navbar{
+			width: 80%;
+		}
 		&-copy{
 			padding: 2em 2em 10em 2em;
 			&-title{
@@ -444,6 +489,7 @@ body{
 		clip-path: polygon(0 0,100% 0, 100% 70%,75% 100%,0 55%);
 		&-header{
 			padding: 4em 2em;
+
 		}
 		&-copy{
 			&-title{
@@ -507,6 +553,9 @@ body{
 		}
 		&-title{
 			font-size: 2rem;
+		}
+		&-btn{
+			padding: 1em 5em;
 		}
 
 	}
