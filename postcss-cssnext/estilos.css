@@ -34,6 +34,9 @@ font-family: 'Exo 2', sans-serif;*/
 .fa-twitter:before {
   content: "\f099";
 }
+.fa-plus:before {
+  content: "\f067";
+}
 .btn{
 	font-family: var(--FuenteP);
 	border-radius: 30px;
@@ -431,6 +434,16 @@ body{
 			font-size: 2rem;
 			text-transform: uppercase;
 			font-weight: normal;
+		}
+		&-parrafo{
+			font-family: var(--FuenteP);
+			color: var(--colorText);
+			&-btn{
+				color: var(--colorAzul);
+				&:hover{
+					color: var(--colorAzul);
+				}
+			}
 		}
 		&-sociales{
 			padding: 0;
